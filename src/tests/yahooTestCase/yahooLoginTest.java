@@ -23,6 +23,8 @@ public class yahooLoginTest {
 	public void loginWithValidCredential(){
 		objLogin.enterUserName("quanleminh464@yahoo.com");
 		objLogin.enterPassword("@12345678");
+		objLogin.clickLoginButton();
+		
 		Assert.assertTrue("Login successfull", driver.getTitle().contains("quanleminh464") );
 	}
 }

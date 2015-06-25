@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import yahooMail.loginPage;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Wait;
 
 
 public class loginYahoo {
@@ -22,4 +21,6 @@ public class loginYahoo {
 	public void enterPassword(String strPassword){
 		WebElement password = driver.findElement(By.xpath(objLogin.passwordTextBox));
 	}
+	
+	
 }

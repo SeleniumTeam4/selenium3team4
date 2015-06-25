@@ -1,20 +1,22 @@
-package yahooMailActions;
+package actions;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import yahooMail.loginPage;
+import interfaces.yahooLoginPage;
+import interfaces.yahooMailHomePage;
 import org.openqa.selenium.WebElement;
 
 
 public class loginYahoo {
 	WebDriver driver;
-	loginPage objLogin; 
+	yahooLoginPage objLogin; 
+	yahooMailHomePage objYHMailHomePage;
 	
 	// Enter user name
 	public void enterUserName(String strUserName){
 		WebElement userName = driver.findElement(By.xpath(objLogin.userNameTextBox));
-		
-		userName.sendKeys(strUserName);	
+		userName.click();
+		userName.sendKeys("12345");	
 	}
 	
 	// Enter password
@@ -22,5 +24,10 @@ public class loginYahoo {
 		WebElement password = driver.findElement(By.xpath(objLogin.passwordTextBox));
 	}
 	
+	// Click login button
+	public void clickLoginButton(){
+		WebElement loginButton = driver.findElement(By.xpath(objLogin.signInButton));
+		loginButton.click();
+	}
 	
 }

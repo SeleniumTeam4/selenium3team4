@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19428" started-at="2015-06-25T08:11:09Z" finished-at="2015-06-25T08:11:28Z">
+  <suite name="Default suite" duration-ms="10547" started-at="2015-06-25T14:35:03Z" finished-at="2015-06-25T14:35:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="19428" started-at="2015-06-25T08:11:09Z" finished-at="2015-06-25T08:11:28Z">
-      <class name="yahooTestCase.yahooLoginTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:yahooTestCase.yahooLoginTest@1c54ad4]" name="beforeMethod" is-config="true" duration-ms="19327" started-at="2015-06-25T15:11:09Z" finished-at="2015-06-25T15:11:28Z">
+    <test name="Default test" duration-ms="10547" started-at="2015-06-25T14:35:03Z" finished-at="2015-06-25T14:35:13Z">
+      <class name="tests.yahooLoginTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.yahooLoginTest@1c54ad4]" name="beforeMethod" is-config="true" duration-ms="10488" started-at="2015-06-25T21:35:03Z" finished-at="2015-06-25T21:35:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="loginWithValidCredential()[pri:0, instance:yahooTestCase.yahooLoginTest@1c54ad4]" name="loginWithValidCredential" duration-ms="9" started-at="2015-06-25T15:11:28Z" finished-at="2015-06-25T15:11:28Z">
+        <test-method status="FAIL" signature="loginWithValidCredential()[pri:0, instance:tests.yahooLoginTest@1c54ad4]" name="loginWithValidCredential" duration-ms="47" started-at="2015-06-25T21:35:13Z" finished-at="2015-06-25T21:35:13Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at yahooTestCase.yahooLoginTest.loginWithValidCredential(yahooLoginTest.java:24)
+	at tests.yahooLoginTest.loginWithValidCredential(yahooLoginTest.java:36)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredential -->
-      </class> <!-- yahooTestCase.yahooLoginTest -->
+      </class> <!-- tests.yahooLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

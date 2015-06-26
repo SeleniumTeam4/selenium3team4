@@ -12,18 +12,26 @@ import actions.commonActions;
 import interfaces.yahooLoginPage;
 
 public class yahooLoginTest {
+<<<<<<< HEAD
 	WebDriver driver;
 	loginYahoo objLogin ;
+=======
+	WebDriver driver = new FirefoxDriver();
+	loginYahoo objLogin;
+>>>>>>> origin/master
 	WebElement page;
 	FirefoxDriver firefox;
 	commonActions common;
 	yahooLoginPage loginPage;
 	
+<<<<<<< HEAD
 	public yahooLoginTest() {
 		driver  = new FirefoxDriver();
 		objLogin = new loginYahoo(driver);
 	}
 	
+=======
+>>>>>>> origin/master
 	@BeforeTest
 	public void beforeMethod(){
 		driver.get("http://mail.yahoo.com");
@@ -31,6 +39,7 @@ public class yahooLoginTest {
 	
 	@Test
 	public void loginWithValidCredential(){
+<<<<<<< HEAD
 		//driver.get("http://mail.yahoo.com");
 	/*	WebElement userName = driver.findElement(By.xpath("//input[@id='login-username']"));
 		WebElement password =  driver.findElement(By.xpath("//input[@id='login-passwd']"));
@@ -46,6 +55,18 @@ public class yahooLoginTest {
 		objLogin.clickLoginButton();
 		
 		
+=======
+		//common.waitForElementVisible(20, (loginPage.userNameTextBox));
+		try {
+			Thread.sleep(40);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		objLogin.enterUserName("quanleminh464@yahoo.com");
+		objLogin.enterPassword("@12345678");
+		objLogin.clickLoginButton();
+>>>>>>> origin/master
 		Assert.assertTrue("Login successfull", driver.getTitle().contains("quanleminh464") );
 	}
 }
